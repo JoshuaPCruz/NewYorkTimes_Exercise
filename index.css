@@ -123,3 +123,30 @@ figure {
     margin-left: 10px;
     border-top: 2px solid black;
 }
+
+
+@media screen and (max-width: 780px) {
+    .principal {
+        grid-template: auto auto 50px / 1fr;
+        grid-template-areas: "up"
+                             "midle"
+                             "down";
+    }
+    .pincipal__left {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        grid-area: up;
+    }
+    .principal__center {
+        grid-area: midle;
+    }
+    .principal__right {
+        grid-area: down;
+    }
+    .principal__center--article2-column {
+        column-count: 2;
+    }
+    .principal__right {
+        border-top: none;
+    }
+}
