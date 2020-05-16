@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+main {
+    padding-bottom: 20px;
+}
+.container {
+    display: grid;
+    grid-template: auto auto 1fr / 1fr;
+    margin: 0 10%;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    text-align: center;
+}
+/*----------------------------------------- titulo y subtitulo principal */
+.title-header {
+    text-align: center;
+    padding: 20px 0;
+    font-family: Old English Text MT;
+    font-size: 30px;
+}
+.subtitle-header {
+    text-align: left;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+/*----------------------------------------- grilla principal de 1 sola fila y 3 columnas */
+.principal {
+    display: grid;
+    grid-template: 1fr / 1fr 4fr .5fr;
+}
+.principal section {
+    padding: 0 10px;
+    margin-top: 10px;
+}
+/*----------------------------------------- columna principal-left */
+.pincipal__left hr {
+    width: 60%;
+    border: 1px solid black;
+}
+.pincipal__left h1 {
+    font-size: 25px;
+}
+.pincipal__left h2 {
+    font-size: 20px;
+}
+.pincipal__left h3 {
+    font-size: 20px;
+}
+.pincipal__left h4 {
+    font-size: 11px;
+    padding-top: 10px;
+}
+.pincipal__left p {
+    text-align: justify;
+}
+/*----------------------------------------- columna principal-center */
+.principal__center {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.principal__center article {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+figure {
+    margin: 0;
+}
+.title-dos {
+    padding-top: 20px;
+}
+.title-dos {
+    text-align: left;
+}
+/*-------------------------- articulo 1 */
+.principal__center--article1 img {
+    width: 100%;
+}
+.principal__center--article1-description h3 {
+    text-align: left;
+}
+.principal__center--article1-description p {
+    margin: 0;
+}
+/*-------------------------- articulo 2 */
+.principal__center--article2-column {
+    column-count: 4;
+    column-fill: auto;
+    text-align: justify;
+}
+.principal__center--article2-column h4 {
+    border-top: 2px solid black;
+    width: 75%;
+    margin: 10px auto;
+    padding-top: 5px;
+    text-align: center;
+}
+/*-------------------------- articulo 3 */
+.principal__center--article3 {
+    border: none !important;
+}
+.principal__center--article3-column {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.principal__center--article3-column p {
+    margin: 0;
+    padding-right: 10px;
+    flex: 1;
+}
+.principal__center--article3-column figure {
+    flex: 1;
+}
+/*----------------------------------------- columna principal-right */
+.principal__right {
+    margin-left: 10px;
+    border-top: 2px solid black;
+}
